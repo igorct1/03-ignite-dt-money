@@ -28,7 +28,6 @@ export function TransactionsStorage({ children }: TransactionStorageProps) {
     const json = await res.json()
 
     setTransactions(json)
-    console.log(json)
   }
 
   useEffect(() => {
