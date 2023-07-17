@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
 import { SearchForm } from './components/SearchForm'
@@ -8,6 +9,21 @@ import {
 } from './styles'
 
 export function Transactions() {
+  const [transactions, setTransactions] = useState([])
+
+  useEffect(() => {
+    async function getData() {
+      const res = await fetch('http://localhost:3000/posts')
+
+      const json = await res.json()
+
+      setTransactions(json)
+    }
+    getData()
+  }, [])
+
+  console.log(transactions)
+
   return (
     <div>
       <Header />
