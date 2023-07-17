@@ -2,8 +2,11 @@
  "posts": [
     {
         "id": 1,
-        "title": "aprendendo json server",
-        "author": "@igorct1"
+        "description": "Hamburguer",
+        "type": "outcome",
+        "price": 40,
+        "category": "Compra",
+        "createdAt": "2023-07-17T23:03:50.748Z"
     }
  ]   
 }
