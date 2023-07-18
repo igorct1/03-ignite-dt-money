@@ -62,7 +62,7 @@ export function TransactionsStorage({ children }: TransactionStorageProps) {
 
   useEffect(() => {
     fetchTransactions()
-  }, [])
+  }, [fetchTransactions])
 
   return (
     <TransactionsContext.Provider
