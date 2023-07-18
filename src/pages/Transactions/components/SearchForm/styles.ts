@@ -32,11 +32,16 @@ export const SerachFormContainer = styled.form`
 
     cursor: pointer;
 
-    &:hover {
+    &:not(:disabled):hover {
       background: ${({ theme }) => theme['green-500']};
       border: 1px solid ${({ theme }) => theme['green-500']};
       color: ${({ theme }) => theme.white};
       transition: all 0.2s;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
     }
   }
 `
