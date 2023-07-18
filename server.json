@@ -1,20 +1,28 @@
 {
- "transactions": [
+  "transactions": [
     {
-        "id": 1,
-        "description": "Hamburguer",
-        "type": "outcome",
-        "price": 40,
-        "category": "Compra",
-        "createdAt": "2023-07-17T23:03:50.748Z"
+      "description": "Carro",
+      "price": 28000,
+      "category": "Necessidade",
+      "type": "outcome",
+      "createdAt": "2023-07-18T01:21:41.595Z",
+      "id": 1
     },
     {
-        "id": 2,
-        "description": "Desenvolvimento de Site",
-        "type": "income",
-        "price": 12000,
-        "category": "Venda",
-        "createdAt": "2023-07-17T23:03:50.748Z"
+      "description": "desenvolvimento de app",
+      "price": 8000,
+      "category": "venda",
+      "type": "outcome",
+      "createdAt": "2023-07-18T01:24:00.983Z",
+      "id": 2
+    },
+    {
+      "description": "pastel",
+      "price": 5,
+      "category": "alimentação",
+      "type": "outcome",
+      "createdAt": "2023-07-18T01:37:44.567Z",
+      "id": 3
     }
- ]   
+  ]
 }
